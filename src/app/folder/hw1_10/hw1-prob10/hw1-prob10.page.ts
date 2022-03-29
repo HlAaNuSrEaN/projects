@@ -10,17 +10,17 @@ export class Hw1Prob10Page implements OnInit {
   ts1
   ts2
   ts3
-  
+
   constructor() { }
 
   ngOnInit() {
 
-    let ts1 = Number(prompt ('Plese enter test score.'))
-    let ts2 = Number(prompt ('Plese enter test score.'))
-    let ts3 = Number(prompt ('Plese enter test score.'))
+    this.ts1 = Number(prompt ('Please enter your first test score.'))
+    this.ts2 = Number(prompt ('Please enter your second test score.'))
+    this.ts3 = Number(prompt ('Please enter your third test score.'))
 
 
-    let avg = ((ts1 + ts2 + ts3)/3)
+    let avg = ((this.ts1 + this.ts2 + this.ts3)/3)
     this.average = avg
   }
 
